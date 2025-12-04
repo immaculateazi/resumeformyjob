@@ -68,8 +68,18 @@
         <button class="btn-primary" type="submit">Create my resume</button>
       </form>
 
-      <p class="note">Want to connect ChatGPT for suggestions? <a href="#" id="chat-link">Click here to add ChatGPT</a>.</p>
-    </section>
+      <!-- ChatGPT interactive section -->
+  <div class="chatgpt-container">
+    <h3>Get AI Suggestions for Your Resume</h3>
+    <textarea id="userPrompt" placeholder="Ask ChatGPT for resume tips..." rows="3"></textarea><br>
+    <button class="btn-primary" type="button" onclick="sendPrompt()">Ask ChatGPT</button>
+    <p id="response" class="chat-response"></p>
+  </div>
+
+  <p class="note">
+    Want to connect ChatGPT directly? <a id="chat-link" href="https://chat.openai.com/" target="_blank">Click here</a>.
+  </p>
+</section>
   </main>
 
   <footer class="site-footer">
