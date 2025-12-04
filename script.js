@@ -1,4 +1,4 @@
-   // Update year in footer
+// Update year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // ChatGPT link updater
